@@ -40,7 +40,7 @@ function updateOrderSummary() {
           ${item.quantity}
           <button onclick="changeQuantity(${index}, 1)">+</button>
         </td>
-        <td>$${item.total.toFixed(2)}</td>
+        <td>₹${item.total.toFixed(2)}</td>
         <td><button onclick="removeItem(${index})">Remove</button></td>
       </tr>
     `;
