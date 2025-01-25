@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Billing System</title>
+  <link rel="stylesheet" href="style.css">
+  <div class="panel1">
+    Caffeati
+    <img src="logo.png">
+  </div>
+</head>
+<body>
+  <header>
+    <h1>Cafe Billing System</h1>
+    <div class="message">
+      "Each item is considered a single piece when selected."
+    </div>
+  </header>
+  <main>
+    <div id="order-container">
+      <h1>Order Number: #<span id="order-number">--</span></h1>
+    </div>
+    
+    <!-- Item Selection -->
+    <section id="menu">
+      <h2>Menu</h2>
+      <div class="menu-items">
+        <button onclick="addItem('Espresso', 120)">
+          <img src="crossiant.jpg" alt="Espresso">
+          <span>Crossiant ₹120</span>
+        </button>
+        <button onclick="addItem('Espresso', 25)">
+          <img src="cookies.jpg" alt="Espresso">
+          <span>Cookies ₹25</span>
+        </button>
+        <button onclick="addItem('Espresso', 70)">
+          <img src="tea.jpg" alt="Espresso">
+          <span>Tea ₹70</span>
+        </button>
+        <button onclick="addItem('Espresso', 120)">
+          <img src="coldcoffee.jpg" alt="Espresso">
+          <span>Cold-Coffee₹120</span>
+        </button>
+        <button onclick="addItem('Espresso', 120)">
+          <img src="sandwich.jpg" alt="Espresso">
+          <span>Sandwich ₹120</span>
+        </button>
+        <button onclick="addItem('Espresso', 200)">
+          <img src="pasta.jpg" alt="Espresso">
+          <span>Pasta ₹200</span>
+        </button>
+        <button onclick="addItem('Espresso', 50)">
+          <img src="bread.jpg" alt="Espresso">
+          <span>Bread ₹50</span>
+        </button>
+        <button onclick="addItem('Espresso', 120)">
+          <img src="vegroll.jpg" alt="Espresso">
+          <span>Veg-Roll ₹120</span>
+        </button>
+        <button onclick="addItem('Latte', 180)">
+          <img src="pancake.jpg" alt="Latte">
+          <span>Pancake ₹180</span>
+        </button>
+        <button onclick="addItem('Cappuccino', 110)">
+          <img src="capacinno.avif" alt="Cappuccino">
+          <span>Coffee ₹110</span>
+        </button>
+        <button onclick="addItem('Brownie', 150)">
+          <img src="brownie.jpg" alt="Brownie">
+          <span>Brownie  ₹150</span>
+        </button>
+        <button onclick="addItem('Muffin', 80)">
+          <img src="muffin.jpg" alt="Muffin">
+          <span>Muffin  ₹80</span>
+        </button>
+      </div>
+    </section>
+    <!-- Order Summary -->
+    <section id="order">
+      <h2>Order Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="order-summary"></tbody>
+      </table>
+      <div id="totals">
+        <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+        <p>Tax (10%): ₹<span id="tax">0.00</span></p>
+        <p><strong>Total: ₹<span id="total">0.00</span></strong></p>
+      </div>
+      <button onclick="clearOrder()">Clear Order</button>
+      <button onclick="generateReceipt()">Generate Receipt</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafe Billing System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* style.css */
+.panel1 {
+    color: #674636;
+    background-color: #F7EED3;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+.panel1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body {
+    background-color: #FFF8E8;
+}
+  
+  header {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    gap: 5px;
+
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  #order-container {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  #order-number {
+    color: #8C9E75;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #8C9E75;
+  }
+  #order-container {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  #order-number {
+    color: #8C9E75;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+    
+  h1, h2 {
+    color: #6F4E37;
+  }
+  .message{
+    align-items: center;
+    background-color: white;
+    color: #6F4E37;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  #menu {
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px; /* Adjusted to fit 5 items in a row */
+  }
+  
+  .menu-items button {
+    background-color: #8C9E75;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    width: 140px; /* Adjusted width to fit 5 items */
+  }
+  
+  .menu-items button img {
+    width: 120px; /* Image size remains larger for better visuals */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+   
+  .menu-items button span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .menu-items button:hover {
+    background-color: #6F4E37;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  #totals {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  button {
+    background-color: #8C9E75;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    opacity: 40%;
+  }
+  
+  footer {
+    background-color: #F7EED3;
+    color: #674636;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
